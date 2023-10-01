@@ -19,9 +19,9 @@ enum Color{
 impl fmt::Display for Color {
     fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
         match self {
-            Self::Red => write!(f, "{}", console::style("🔴").red()),
-            Self::Yellow => write!(f, "{}", console::style("🟡").yellow()),
-            Self::Blue => write!(f, "{}", console::style("🔵").blue()),
+            Self::Red => write!(f, "🔴"),
+            Self::Yellow => write!(f, "🟡"),
+            Self::Blue => write!(f, "🔵"),
         }
     }
 }
